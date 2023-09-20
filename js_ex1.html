@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    10px ~ 35px 까지 5씩 크기가 늘어나도록 document.write() 로
+    10px, 15px, 20px, 25px, 30px, 15px (style = 'font-size : 10px') 
+    -->
+    <h3> for 문으로 10px~35px 크기 출력 </h3>
+    <hr>
+    <script>
+        for(var size=10; size<=35; size+=5) {
+            document.write("<span ");
+            document.write("style='font-size:" + size + "px'>");
+            document.write(size + "px");
+            document.write("</span>");
+        }
+    </script>
+</body>
+</html>
